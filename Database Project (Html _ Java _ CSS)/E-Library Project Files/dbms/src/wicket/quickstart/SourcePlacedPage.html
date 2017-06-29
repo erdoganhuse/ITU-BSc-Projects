@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+	<form id="sourceplacedform" method="get" wicket:id="sourceplacedform">
+		<table>
+			<tr>
+				<td align="center" valign="top" style="font-size: 36px" colspan="2"><img src="SPP.png" width="800"
+				height="70"></td>
+			</tr>
+			<tr>
+				<td align="center" valign="top" style="font-size: 36px">&nbsp;</td>
+			</tr>
+			<tr>
+				<td align="left" style="font-size: 24px; color: #ec8900" width="30%">Source
+					Name :</td>
+				<td wicket:id="sourcename" align="left" style="color: #6bb5f4; font-size: 24px;"></td>
+			</tr>
+			<tr>
+				<td wicket:id="librarylabel" align="left"
+					style="font-size: 24px; color: #ec8900" width="30%"></td>
+				<td align="left"><select wicket:id="_library_name"></select></td>
+			</tr>
+			<tr>
+				<td wicket:id="floorlabel" align="left"
+					style="font-size: 24px; color: #ec8900" width="30%"></td>
+				<td align="left"><select wicket:id="_floor_name"></select></td>
+			</tr>
+			<tr>
+				<td wicket:id="bookcaselabel" align="left"
+					style="font-size: 24px; color: #ec8900" width="30%"></td>
+				<td align="left"><select wicket:id="_bookcase_name"></select></td>
+			</tr>
+			<tr>
+				<td wicket:id="bookshelflabel" align="left"
+					style="font-size: 24px; color: #ec8900" width="30%"></td>
+				<td align="left"><select wicket:id="_bookshelf_name"></select>
+				</td>
+
+			</tr>
+			<tr>
+				<td wicket:id="columnlabel" align="left"
+					style="font-size: 24px; color: #ec8900" width="30%"></td>
+				<td align="left"><input type="number" size="24px"
+					wicket:id="_column" placeholder="1-50" min="1" max="50"></td>
+			</tr>
+
+			<tr>
+				<td wicket:id="urllabel" align="left"
+					style="font-size: 24px; color: #ec8900" width="30%"></td>
+				<td align="left"><input type="text" size="24px"
+					wicket:id="_url"></td>
+			</tr>
+			<tr>
+				<td><a wicket:id="urlLink"><img src="url.png" width="80" height="80"></a></td>
+			</tr>
+
+			<tr>
+				<td align="right" style="font-size: 24px; color: #0071bc"
+					width="30%">Placed Source</td>
+				<td align="left"><input type="image" src="add.jpg" width="48"
+					height="48"></td>
+			</tr>
+		</table>
+	</form>
+	<footer> </footer>
+</body>
+</html>

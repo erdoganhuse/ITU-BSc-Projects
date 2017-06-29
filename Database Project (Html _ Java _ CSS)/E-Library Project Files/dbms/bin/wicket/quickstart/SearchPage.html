@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="guestNavigation"></nav>
+		<nav wicket:id="userNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+
+
+	<table
+		style="margin-left: 450px; border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<img src="FB.png" width="500" height="70">
+		</caption>
+
+		<tr
+			style="border-bottom: 1px dotted #0071bc; padding: 5px; color: #0071bc; font-size:large">
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Name</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Author</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Category</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Publication
+				Year</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Rent</th>
+		</tr>
+
+		<tr wicket:id="book_rows" style="color: #0071bc;">
+			<td
+				style="border-bottom: 1px dotted #0071bc; padding: 5px; font-weight: bold;"
+				wicket:id="name"><b></b></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="author"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="category"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="year"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"><a
+				wicket:id="link" style="color: #006600;">Book's Page</a></td>
+		</tr>
+	</table>
+	<br>
+	<table
+		style="margin-left: 450px; border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<img src="FD.png" width="500" height="70">
+		</caption>
+		<tr
+			style="border-bottom: 1px dotted #0071bc; padding: 5px; color: #0071bc; font-size:large">
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Name</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Category</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Duration</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Publication
+				Year</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Rent</th>
+		</tr>
+		<tr wicket:id="dvd_rows" style="color: #0071bc;">
+			<td
+				style="border-bottom: 1px dotted #0071bc; padding: 5px; font-weight: bold;"
+				wicket:id="name"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="category"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="duration"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="year"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"><a
+				wicket:id="link" style="color: #006600;">Dvd's Page</a></td>
+		</tr>
+	</table>
+	<br>
+	<table
+		style="margin-left: 450px; border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<img src="FM.png" width="500" height="70">
+		</caption>
+		<tr
+			style="border-bottom: 1px dotted #0071bc; padding: 5px; color: #0071bc; font-size:large">
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Name</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Category</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Issue
+				Number</th>
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Publication
+				Date</th>
+
+			<th style="border-bottom: 1px dotted #0071bc; padding: 5px;">Rent</th>
+		</tr>
+		<tr wicket:id="magazine_rows" style="color: #0071bc;">
+			<td
+				style="border-bottom: 1px dotted #0071bc; padding: 5px; font-weight: bold;"
+				wicket:id="name"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="category"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="issue"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="year"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"><a
+				wicket:id="link" style="color: #006600;">Magazine's Page</a></td>
+		</tr>
+	</table>
+
+</body>
+</html>
+
+
+

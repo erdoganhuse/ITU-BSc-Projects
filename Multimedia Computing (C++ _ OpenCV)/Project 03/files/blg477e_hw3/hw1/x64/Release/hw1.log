@@ -1,0 +1,11 @@
+﻿Build started 18.3.2015 20:59:08.
+     1>Project "C:\Users\ry\documents\visual studio 2013\Projects\hw1\hw1\hw1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(1): fatal error C1083: Cannot open include file: 'opencv2/core/core.hpp': No such file or directory
+     1>Done Building Project "C:\Users\ry\documents\visual studio 2013\Projects\hw1\hw1\hw1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.12

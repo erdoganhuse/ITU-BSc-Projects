@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="guestNavigation"></nav>
+	</header>
+	<form action="text" wicket:id="form">
+		<table>
+			<tr>
+				<td><img src="SP.png" width="500" height="70"></td>
+			</tr>
+		</table>
+		<table style="border: 10px solid RoyalBlue; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+			<tr>
+				<td style="color: #ec8900; font-size: 24px; float: left">Username</td>
+				<td><input type="text" wicket:id="username"
+					placeholder="Enter Username"></td>
+			</tr>
+			<tr>
+				<td style="color: #ec8900; font-size: 24px; float: left">Password</td>
+				<td><input type="password" wicket:id="password"
+					placeholder="Enter Password"></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td align="left"><input type="image" src="login2.png"
+					value="Login" width="96" height="96"></td>
+			</tr>
+			<tr>
+				<td align="left"><a href="#" wicket:id="registerPage_link"
+					style="text-decoration: none"><img src="adduser.png"
+						width="120" height="96"></a></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

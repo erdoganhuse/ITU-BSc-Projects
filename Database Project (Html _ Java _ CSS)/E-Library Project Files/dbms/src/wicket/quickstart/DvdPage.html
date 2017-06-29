@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color: #fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation">navigation links</nav>
+		<nav wicket:id="userNavigation"></nav>
+		<nav wicket:id="guestNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+	<table align="left"
+		style="border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<img src="DIP.png" width="800" height="70">
+		</caption>
+		<tr>
+			<th align="left" wicket:id="label" style="color: #FF0000;
+				font-size: 30px"></th>
+		</tr>
+		<tr>
+			<th style="color: #0071bc; font-size: 24px; float: left">DVD
+				Name :</th>
+			<th align="center" wicket:id="name"
+				style="color: #6bb5f4; font-size: 24px; float: left"></th>
+		</tr>
+		<tr>
+			<th style="color: #0071bc; font-size: 24px; float: left">Publication
+				Year :</th>
+			<th align="center" wicket:id="year"
+				style="color: #6bb5f4; font-size: 24px; float: left"></th>
+		</tr>
+		<tr>
+			<th style="color: #0071bc; font-size: 24px; float: left">Duration
+				:</th>
+			<th align="center" wicket:id="duration"
+				style="color: #6bb5f4; font-size: 24px; float: left"></th>
+		</tr>
+		<tr>
+			<th style="color: #0071bc; font-size: 24px; float: left">Category
+				:</th>
+			<th align="center" wicket:id="category"
+				style="color: #6bb5f4; font-size: 24px; float: left"></th>
+		</tr>
+		<tr>
+			<th style="color: #0071bc; font-size: 24px; float: left">Rental
+				Count :</th>
+			<th align="center" wicket:id="rental_count"
+				style="color: #6bb5f4; font-size: 24px; float: left"></th>
+		</tr>
+		<tr align="left">
+			<th><a wicket:id="addLink" align="left"
+				style="text-decoration: none;"> <img src="ADD.png" width="50"
+					height="20"> &nbsp;&nbsp;&nbsp;
+			</a> <a wicket:id="editDvdLink" align="left"
+				style="text-decoration: none;"> <img src="EDI.png" width="50"
+					height="20"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</a> <a wicket:id="deleteDvdLink" align="left"
+				style="text-decoration: none;"><img src="DELETE.png" width="30"
+					height="30"></a></th>
+		</tr>
+	</table>
+	<table align="left"
+		style="border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<img src="SR.png" width="500" height="45">
+		</caption>
+		<tr
+			style="border-bottom: 1px dotted #ec8900; padding: 5px; color: #0071bc;">
+			<th>#</th>
+			<th>Location</th>
+			<th>Availability</th>
+			<th wicket:id="rentColumn"></th>
+			<th wicket:id="editColumn"></th>
+			<th wicket:id="deleteColumn"></th>
+
+		</tr>
+		<tr wicket:id="rows"
+			style="border-bottom: 1px dotted black; padding: 5px; color: #0071bc;">
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="rowCounter"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="location"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"
+				wicket:id="available"></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"><a
+				wicket:id="rent"><img src="RENT.png" width="50" height="20"></a></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"><a
+				wicket:id="editLink"><img src="EDI.png" width="50" height="20"></a></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"><a
+				wicket:id="deleteLink"><img src="DELETE.png" width="30"
+					height="30"></a></td>
+			<td style="border-bottom: 1px dotted #0071bc; padding: 5px;"><a
+				wicket:id="waitLink"><img src="WAIT.png" width="40" height="20"></a></td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+

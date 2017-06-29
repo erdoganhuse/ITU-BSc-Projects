@@ -1,0 +1,59 @@
+.386
+.model Flat
+public Fibonacci
+include iosmacros.inc ;includes macros for outputting to the screen
+
+.code
+Fibonacci proc
+
+    MOV EAX, [ESP+4]
+    CMP EAX, 1
+    JA Recurse
+    MOV EAX, 1 ; return value in eax
+    JMP exit
+
+Recurse:
+    PUSH EBX ; preserve value of ebx
+    DEC EAX
+    PUSH EAX
+    CALL Fibonacci
+    MOV EBX, EAX ; ebx is preserved by callee, so it is safe to use
+    DEC [ESP] ; decrement the value already on the stack
+    CALL Fibonacci
+    ADD EAX, EBX ; return value in eax
+    ADD ESP, 4 ; remove value from stack
+    POP EBX ; restore old value of ebx
+exit:
+ret
+Fibonacci endp
+
+
+------------------------------------------------------------
+
+Fibonacci proc
+  PUSH  EBP  ; save previous frame pointer
+  MOV   EBP, ESP  ;  set current frame pointer
+
+  MOV EAX, [EBP+8] ; get argument N
+  CMP EAX, 1  ; N<=1?
+  JA Recurse ; no, compute it recursivel
+  MOV ECX, 1 ; yes, Fib(1)--> 1
+  JMP exit
+
+Recurse:
+  DEC EAX  ; = N-1
+  MOV EDX, EAX ; = N-1
+  PUSH EDX  ; save N-1
+  PUSH EAX  ; set argument = N-1
+  CALL Fibonacci ; compute Fib(N-1) to ECX
+  POP  EAX  ; pop N-1
+  DEC  EAX  ; = N-2
+  PUSH ECX  ; save Fib(N-1)
+  PUSH EAX  ; set argument = N-2
+  CALL Fibonacci ; compute Fib(N-2) to ECX
+  POP  EAX  ; = Fib(N-1)
+  ADD ECX, EAX  ; = Fib(N-1)+FIB(N-2)
+exit:
+  MOV ESP,EBP  ; 
+  POP  EBP   ; EDIT: missed this on first answer
+  ret

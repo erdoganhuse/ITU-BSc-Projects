@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+	<table>
+		<tr>
+			<td align="center" valign="top" style="font-size: 36px" colspan="2">Online
+				Library Edit Admin Profile</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top" style="font-size: 36px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="left" style="font-size: 24px" width="18%">Name :</td>
+			<td align ="left"><input type="text" size="24px" wicket:id="a_name"
+				placeholder="First name"></td>
+		</tr>
+		<tr>
+			<td align="left" style="font-size: 24px">Last Name :</td>
+			<td align ="left"><input type="text" size="24px" wicket:id="a_lname"
+				placeholder="Last name"></td>
+		</tr>
+		<tr>
+			<td align="left" style="font-size: 24px">Username :</td>
+			<td align ="left"><input type="text" size="24px" wicket:id="a_uname"
+				placeholder="Username"></td>
+		</tr>
+		<tr>
+			<td align="left" style="font-size: 24px">Current Password :</td>
+			<td align ="left"><input type="password" wicket:id="currentpassword"></td>
+		</tr>
+		<tr>
+			<td align="left" style="font-size: 24px">New Password :</td>
+			<td align ="left"><input type="password" wicket:id="newpassword"></td>
+		</tr>
+		<tr>
+			<td align="left" style="font-size: 24px">Verify Password :</td>
+			<td align ="left"><input type="password" wicket:id="anewpassword"></td>
+		</tr>
+		<tr>
+			<td align="left" style="font-size: 24px"><input type="submit"
+				value="Edit"></td>
+		</tr>
+	</table>
+	<footer> </footer>
+</body>
+</html>

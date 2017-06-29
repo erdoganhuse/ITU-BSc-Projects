@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation">navigation links</nav>
+		<nav wicket:id="guestNavigation">navigation links</nav>
+	</header>
+	<form action="#" wicket:id="register">
+		<table valign="bottom">
+			<tr>
+				<td colspan=2><img src="R.png" width="500" height="70"></td>
+			</tr>
+			<tr>
+				<th align="right" style="font-size: 20px; color: #ec8900">First
+					Name :</th>
+				<th align="left"><input wicket:id="name" type="text"
+					placeholder="Enter First Name" autocomplete="off" autofocus
+					required></th>
+			</tr>
+			<tr>
+				<th align="right" style="font-size: 20px; color: #ec8900">Last
+					Name :</th>
+				<th align="left"><input wicket:id="surname" type="text"
+					placeholder="Enter Last Name" autocomplete="off" autofocus required></th>
+			</tr>
+			<tr>
+				<th align="right" style="font-size: 20px; color: #ec8900">Username
+					:</th>
+				<th align="left"><input wicket:id="username" type="text"
+					placeholder="Enter Username" autocomplete="off" autofocus required></th>
+			</tr>
+			<tr>
+				<th align="right" style="font-size: 20px; color: #ec8900">Password
+					:</th>
+				<th align="left"><input wicket:id="password" type="password"
+					placeholder="Enter Password" autocomplete="off" autofocus required></th>
+			</tr>
+			<tr>
+				<th align="right"><input name="signup" type="image"
+					value="Register" src="signup.png" width="96" height="96"></th>
+			</tr>
+		</table>
+	</form>
+	<table>
+		<tr>
+			<th align="left" style="font-size: 15px; color: red"><div
+					id="warn" wicket:id="warn"></div></th>
+		</tr>
+	</table>
+</body>
+</html>

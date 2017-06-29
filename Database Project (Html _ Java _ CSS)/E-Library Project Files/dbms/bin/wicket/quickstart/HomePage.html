@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="guestNavigation"></nav>
+		<nav wicket:id="userNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+	<table
+		style="width: 200 px; height: 420px; color: #ec8900; font-size: 24px; float: left">
+		<tr height="150px" valign="top">
+			<td>
+				<form id="searchForm" method="get" wicket:id="searchForm">
+					<table>
+						<tr>
+							<td><img src="OLB.png" width="700" height="100"></td>
+						</tr>
+
+						<tr>
+							<td wicket:id="searchStatus"></td>
+						</tr>
+						<tr>
+							<td align="left" style="font-size: 20px; color: #2783c0">Select
+								Type of Source</td>
+						</tr>
+						<tr>
+							<td align="left" style="font-size: 16px;">Electronic: <input
+								wicket:id="electronic" type="checkbox" name="typesource"
+								value="Electronic"> Physical:<input wicket:id="physical"
+								type="checkbox" name="typesource" value="Physical">
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="font-size: 20px; color: #2783c0">Genre
+								of Source</td>
+						</tr>
+						<tr>
+							<td align="left"><select style="color: #ec8900;" wicket:id="type_name" required></select></td>
+						</tr>
+
+
+						<tr>
+							<td align="left"><select style="color: #ec8900;" wicket:id="category_name" required></select></td>
+						</tr>
+
+
+						<tr>
+							<td align="left"><input type="text" wicket:id="searchField"
+								id="searchField" placeholder="Enter Searching Text"></td>
+						</tr>
+						<tr>
+							<td align="left"><input type="image" src="search.png"
+								value="Search" width="48" height="48"></td>
+						</tr>
+
+						<tr>
+							<th style="font-size: medium; color: #2783c0">Online Library
+								platform can search printed books, e-books, magazines and digital
+								collections.<br>Due to the online library concept Online Library platform only
+								platform's members can access to full text of materials in <br>
+								electronic resources, nevertheless everyone can search all kind of
+								material freely.
+							</th>
+						</tr>
+
+					</table>
+				</form>
+			</td>
+		</tr>
+	</table>
+	<footer>
+		<div id="datetime" wicket:id="datetime">Wed Sep 4 15:32:40 EEST
+			2013</div>
+	</footer>
+</body>
+</html>

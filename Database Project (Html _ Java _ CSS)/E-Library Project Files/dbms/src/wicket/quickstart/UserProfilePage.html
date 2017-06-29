@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="userNavigation"></nav>
+	</header>
+	<table>
+		<tr>
+			<td colspan=2 align="center"><img src="OLUP.png" width="800"
+				height="70"></td>
+		</tr>
+		<tr>
+			<td style="color: #ec8900; font-size: 24px; float: left">First
+				Name : <input type="text" size="24px" wicket:id="u_name" disabled
+				placeholder="First name">
+			</td>
+		</tr>
+		<tr>
+			<td style="color: #ec8900; font-size: 24px; float: left">Surname
+				: <input type="text" size="24px" wicket:id="u_lname" disabled
+				placeholder="Last name">
+			</td>
+		</tr>
+		<tr>
+			<td style="color: #ec8900; font-size: 24px; float: left">Last
+				Login Time : <span wicket:id="last_login" style="color: #6bb5f4;"></span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top" style="font-size: 36px">&nbsp;</td>
+		</tr>
+	</table>
+	<table
+		style="border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<img src="WLS.png" width="500" height="45">
+		</caption>
+		<tr
+			style="border-bottom: 1px dotted #ec8900; padding: 5px; color: #0071bc;">
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Name</th>
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Available</th>
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Link</th>
+		</tr>
+		<tr wicket:id="book_rows"
+			style="border-bottom: 1px dotted #ec8900; padding: 5px; color: #6bb5f4;">
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"
+				wicket:id="name"></td>
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"
+				wicket:id="availability"></td>
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"><a
+				wicket:id="link" style="color: #84ce23;">Book's Page</a></td>
+				<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"><a
+				wicket:id="delete" style="color: #84ce23;"><img src="DELETE.png" width="30"
+					height="30"></a></td>
+		</tr>
+		<tr wicket:id="dvd_rows"
+			style="border-bottom: 1px dotted #ec8900; padding: 5px; color: #6bb5f4;">
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"
+				wicket:id="name"></td>
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"
+				wicket:id="availability"></td>
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"><a
+				wicket:id="link" style="color: #84ce23;">Dvd's Page</a></td>
+				<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"><a
+				wicket:id="delete" style="color: #84ce23;"><img src="DELETE.png" width="30"
+					height="30"></a></td>
+		</tr>
+		<tr wicket:id="magazine_rows"
+			style="border-bottom: 1px dotted #ec8900; padding: 5px; color: #6bb5f4;">
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"
+				wicket:id="name"></td>
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"
+				wicket:id="availability"></td>
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"><a
+				wicket:id="link" style="color: #84ce23;">Magazine's Page</a></td>
+				<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"><a
+				wicket:id="delete" style="color: #84ce23;"><img src="DELETE.png" width="30"
+					height="30"></a></td>
+		</tr>
+	</table>
+	<br>
+	<a wicket:id="suggestionlink">Give Us Suggestions & Requests</a>
+	<footer> </footer>
+</body>
+</html>

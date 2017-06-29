@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+	<form id="adddvdform" method="get" wicket:id="adddvdform">
+		<table>
+			<tr>
+				<td align="center" valign="top" style="font-size: 36px" colspan="2"><img src="ADP.png" width="800"
+				height="70"></td>
+			</tr>
+			<tr>
+				<td align="center" valign="top" style="font-size: 36px">&nbsp;</td>
+			</tr>
+			<tr>
+				<td align="left" style="font-size: 24px;color:#ec8900" width="30%">DVD Name :
+				</td>
+				<td align="left"><input required type="text" size="24px"
+					wicket:id="_name" placeholder="DVD Name"></td>
+			</tr>
+			<tr>
+				<td align="left" style="font-size: 24px;color:#ec8900" width="30%">DVD
+					Publication Year :</td>
+				<td align="left"><input required type="number" size="24px"
+					wicket:id="_publish_year" placeholder="DVD Publication Year"></td>
+			</tr>
+			<tr>
+				<td align="left" style="font-size: 24px;color:#ec8900" width="30%">DVD
+					Duration :</td>
+				<td align="left"><input required type="number" size="24px"
+					wicket:id="_duration" placeholder="DVD Duration" min="1"></td>
+			</tr>
+			<tr>
+				<td align="left" style="font-size: 24px;color:#ec8900" width="30%">DVD
+					Category :</td>
+				<td align="left"><select wicket:id=_category_id></select></td>
+			</tr>
+			<tr>
+				<td align="right" style="font-size: 24px;color:#0071bc" width="30%">Add
+					Source</td>
+				<td align="left"><input type="image" src="add.jpg" width="48"
+					height="48"></td>
+			</tr>
+		</table>
+	</form>
+	<footer> </footer>
+</body>
+</html>

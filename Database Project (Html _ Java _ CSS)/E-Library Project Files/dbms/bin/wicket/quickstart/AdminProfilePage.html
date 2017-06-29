@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+	<table>
+		<tr>
+			<td colspan=2 align="center"><img src="OLAP.png" width="600"
+				height="70"></td>
+		</tr>
+		<tr>
+			<td align="center" valign="top" style="font-size: 36px">&nbsp;</td>
+		</tr>
+	</table>
+	<table style="border: 10px solid RoyalBlue; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<tr>
+			<td style="color: #ec8900; font-size: 24px; float: left">Name :
+			</td>
+			<td><input type="text" size="24px" wicket:id="a_name" disabled
+				placeholder="First name"></td>
+		</tr>
+		<tr>
+			<td style="color: #ec8900; font-size: 24px; float: left">Surname
+				:</td>
+			<td><input type="text" size="24px" wicket:id="a_lname" disabled
+				placeholder="Last name"></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="color: #ec8900; font-size: 24px; float: left">Last
+				Login Time : </td><td> <span wicket:id="last_login" style="color: #6bb5f4;"> </span>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<table
+		style="border: 10px solid RoyalBlue; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<h2>Last 10 Library Renting Process</h2>
+		</caption>
+		<tr style="border-bottom: 1px dotted #ec8900; padding: 5px; color: #0071bc;">
+			<th>User</th>
+			<th>User Last Access</th>
+			<th>Source</th>
+			<th>Source Type</th>
+			<th>Renting Date</th>
+			<th>Expected Returning Date</th>
+			<th>Source Link</th>
+		</tr>
+		<tr style="color: #ec8900;"
+			wicket:id="logrows">
+			<td style="border-bottom: 1px dotted black; padding: 5px;"
+				wicket:id="logdataRow"><a href="#" style="color: #84ce23;">Source's Page</a></td>
+		</tr>
+	</table>
+	<footer> </footer>
+</body>
+</html>

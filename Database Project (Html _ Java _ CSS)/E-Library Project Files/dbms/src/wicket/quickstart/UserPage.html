@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation">navigation links</nav>
+	</header>
+	<h2>User Page</h2>
+	<form id="loginForm" method="get" wicket:id="loginForm">
+		<fieldset>
+			<legend style="color: #F90">Login</legend>
+			<p wicket:id="loginStatus"></p>
+			<table style="border: 10px solid RoyalBlue; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+				<tr>
+					<td>Username:</td>
+					<td><input wicket:id="username" type="text" id="username" /></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input wicket:id="password" type="password" id="password" /></td>
+				</tr>
+			</table>
+			<p>
+				<input type="submit" name="Login" value="Login" />
+			</p>
+		</fieldset>
+	</form>
+
+</body>
+</html>

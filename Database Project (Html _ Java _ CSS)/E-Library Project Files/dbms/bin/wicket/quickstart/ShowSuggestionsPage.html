@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+
+	<table align="center"
+		style="border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<h2>Users Requests & Suggestions</h2>
+		</caption>
+		<tr
+			style="border-bottom: 1px dotted #ec8900; padding: 5px; color: #0071bc;">
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Message</th>
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">User</th>
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Delete</th>
+		</tr>
+		<tr style="border-bottom: 1px dotted black; padding: 5px;"
+			wicket:id="logrows">
+			<td style="border-bottom: 1px dotted black; padding: 5px;"
+				wicket:id="logdataRow"><a href="#">Delete This Message</a></td>
+		</tr>
+	</table>
+
+	<footer> </footer>
+</body>
+</html>

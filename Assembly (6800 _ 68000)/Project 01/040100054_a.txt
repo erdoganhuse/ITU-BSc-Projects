@@ -1,0 +1,31 @@
+!Hüseyin Erdoðan 040100054
+!BLG322 Bilgisayar Mimarisi Ödev 01 A þýkký
+
+	.data
+dizi:	.word	1000
+
+	.equ
+1000: .word ff,ee,55,cc,aa,bb,99,11,33,22,00
+
+	.text
+start:	sethi	0	%r1
+	sethi	dizi	%r24	!dizinin baþalngýç degeri ve r24 loop1 için sayaç olarak kullanýlacak
+loop1:	sethi	dizi	%r23	!dizinin baþalngýç degeri ve r23 loop2 için sayaç olarak kullanýlacak
+	ld	[%r24]	%r22
+	add	%r24	4	%r24	!loop1 için sayacý arttýr
+	sub	%r22	0	%r22	!Dizinin sonuna gelindigini kontrol etmek için 
+	be	end
+loop2:	add	%r23	4	%r21
+	ld	[%r23]	%r19	!Dizinin i ninci degeri
+	ld	[%r21]	%r20	!Dizinin i+1 inci degeri
+	sub	%r20	0	%r20	!Dizinin sonuna gelindigini kontrol etmek için 
+	be	loop1	!Eger loop2 için dizinin sonuna gelindiyse loop1 e dön
+	sub	%r19	%r20	%r18	!i ninci eleman ile i+1 inci elemený kontrol için
+	bl	ifelse	!Eger i ninci eleman i+1 inci elemandan küçükse ifelse e git
+	add	%r23	4	%r23	!loop2 için sayacý arttýr
+	ba	loop2
+ifelse:	st	%r20	[%r23]	!i ninci eleman ile i+1 inci eleman degiþtiriliyor 
+	st	%r19	[%r21]
+	add	%r23	4	%r23	!loop2 için sayacý arttýr	
+	ba	loop2
+end:	ta	0

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/jetty-continuation-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-http-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-io-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-security-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-server-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-servlet-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-util-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-webapp-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-xml-7.6.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-simple-1.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/velocity-1.7-dep.jar"/>
+	<classpathentry kind="lib" path="lib/velocity-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-atmosphere-0.13.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-auth-roles-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-bean-validation-0.12.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-bootstrap-0.12.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-cdi-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-core-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-datetime-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-devutils-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-examples-jar-0.12.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-extensions-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-guice-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-ioc-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-jmx-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-native-websocket-core-0.12.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-native-websocket-jetty-0.12.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-native-websocket-jetty9-0.12.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-native-websocket-tomcat-0.12.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-objectsizeof-agent-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-request-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-spring-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-util-6.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/wicket-velocity-6.10.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mysql-connector-java-5.1.26-bin.jar"/>
+	<classpathentry kind="output" path="bin"></classpathentry>
+</classpath>

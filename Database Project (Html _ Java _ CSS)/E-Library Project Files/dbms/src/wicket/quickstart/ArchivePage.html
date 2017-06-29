@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="userNavigation"></nav>
+	</header>
+
+	<table align="left"
+		style="border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		<caption>
+			<img src="RH.png" width="800" height="60">
+		</caption>
+		<tr
+			style="border-bottom: 1px dotted #ec8900; padding: 5px; color: #0071bc;">
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Source
+				Name</th>
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Source
+				Type</th>
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Renting
+				Date</th>
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Last
+				Returning Date</th>
+			<th style="border-bottom: 1px dotted #ec8900; padding: 5px;">Source
+				Link</th>
+		</tr>
+		<tr style="border-bottom: 1px dotted black; padding: 5px;color: #6bb5f4;"
+			wicket:id="logrows">
+			<td style="border-bottom: 1px dotted #ec8900; padding: 5px;"
+				wicket:id="logdataRow"><a href="#" style="color: #84ce23;">Source's Page</a></td>
+		</tr>
+	</table>
+
+	<footer> </footer>
+</body>
+</html>

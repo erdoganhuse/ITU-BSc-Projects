@@ -1,0 +1,63 @@
+body {	
+    background-color: #5a92e7; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: black; 
+	font-family: Algerian; 
+	text-align: center;
+}  
+
+.menu_class {
+	text-align: center;
+	width: 1000px;
+	height: 400px;
+	font-family: Algerian;
+	border: 1px solid black;
+}   
+
+td, th {
+	border: 1px solid black;
+}
+
+.info_class {
+	text-align: right;
+}
+
+.menu_class2 {
+	font-family: Algerian;
+	font-style: none;
+	font-size: 25px;
+	
+}
+
+p {
+	text-align: left;
+	font-family: Arial;
+}
+
+ol {
+	text-align: left;
+	font-family: Arial;
+}
+
+ul {
+	text-align: left;
+	font-family: Arial;
+}
+
+dl {
+	text-align: left;
+	font-family: Arial;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}  
+a:visited {
+	color: black;
+}  
+a:hover {
+	color: red;
+}

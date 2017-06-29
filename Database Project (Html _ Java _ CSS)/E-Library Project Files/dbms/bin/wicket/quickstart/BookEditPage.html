@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+	<form id="book_edit_profile" method="get" wicket:id="book_edit_profile">
+		<table align="left"
+			style="border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+			<caption>
+				<img src="BEP.png" width="800" height="70">
+			</caption>
+			<tr>
+				<td style="color: #0071bc; font-size: 24px; float: left">Book
+					Name :<input type="text" size="24px" wicket:id="_name"
+					style="color: #6bb5f4; font-size: 24px">
+				</td>
+
+			</tr>
+			<tr>
+				<td style="color: #0071bc; font-size: 24px; float: left">Author
+					:<input type="text" size="24px" wicket:id="_author_name"
+					placeholder="Author" style="color: #6bb5f4; font-size: 24px;">
+				</td>
+			</tr>
+			<tr>
+				<td style="color: #0071bc; font-size: 24px; float: left">Publication
+					Year :<input type="number" size="24px" wicket:id="_publish_year"
+					placeholder="Publication" style="color: #6bb5f4; font-size: 24px;">
+				</td>
+			</tr>
+			<tr>
+				<td style="color: #0071bc; font-size: 24px; float: left">ISBN :
+					<input type="text" size="24px" wicket:id="_ISBN" placeholder="ISBN"
+					style="color: #6bb5f4; font-size: 24px;">
+				</td>
+			</tr>
+			<tr>
+				<td style="color: #0071bc; font-size: 24px; float: left">Category
+					:<select wicket:id=_category_id
+					style="color: #6bb5f4; font-size: 24px;"></select>
+				</td>
+			</tr>
+			<tr>
+				<td align="left" style="font-size: 24px"><input type="image"
+					value="Edit" src="edit.png" width="48" height="96"></td>
+			</tr>
+		</table>
+	</form>
+	<footer> </footer>
+</body>
+</html>

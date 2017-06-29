@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="userNavigation"></nav>
+		<nav wicket:id="adminNavigation"></nav>
+	</header>
+	<form wicket:id="user_edit_profile">
+		<table>
+			<tr>
+				<td align="center" valign="top" style="font-size: 36px" colspan="2"><img
+					src="OLEP.png" width="600" height="70"></td>
+			</tr>
+			<tr>
+				<td align="center" valign="top" style="font-size: 36px">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="color: #ec8900; font-size: 24px; float: left">First
+					Name : <input type="text" size="24px" wicket:id="u_name"
+					placeholder="First name">
+				</td>
+			</tr>
+			<tr>
+				<td style="color: #ec8900; font-size: 24px; float: left">Last
+					Name : <input type="text" size="24px" wicket:id="u_lname"
+					placeholder="Last name">
+				</td>
+			</tr>
+			<tr>
+				<td style="color: #ec8900; font-size: 24px; float: left">Username
+					: <input type="text" size="24px" wicket:id="u_uname"
+					placeholder=wicket>
+				</td>
+			</tr>
+			<tr>
+				<td style="color: #ec8900; font-size: 24px; float: left">Current
+					Password : <input type="password" wicket:id="currentpassword">
+				</td>
+			</tr>
+			<tr>
+				<td style="color: #ec8900; font-size: 24px; float: left">New
+					Password : <input type="password" wicket:id="newpassword">
+				</td>
+			</tr>
+			<tr>
+				<td style="color: #ec8900; font-size: 24px; float: left">Verify
+					Password : <input type="password" wicket:id="anewpassword">
+				</td>
+			</tr>
+			<tr>
+				<td align="left" style="font-size: 24px"><input type="image"
+					value="Edit" src="edit.png" width="48" height="96"></td>
+			</tr>
+		</table>
+	</form>
+	<footer> </footer>
+</body>
+</html>

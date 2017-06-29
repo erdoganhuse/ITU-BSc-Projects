@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="logo2.jpg" type="image/png">
+<title>-Library Popular Sources Page</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#fbda73;">
+	<header>
+		<nav wicket:id="mainNavigation"></nav>
+		<nav wicket:id="guestNavigation"></nav>
+		<nav wicket:id="userNavigation"></nav>
+	</header>
+		<table align="center" 
+		style="border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+			<caption>
+				<img src="mpfb.png" width="800" height="70">
+			</caption>
+			<tr style="border-bottom: 1px dotted #ec8900; padding: 5px;color: #0071bc;">
+				<th>Book Name</th>
+				<th>Author</th>
+				<th>Category</th>
+				<th>Publication Year</th>
+				<th>Popularity</th>
+				<th>Link</th>
+			</tr>
+			<tr style="border-bottom: 1px dotted #0071bc; padding: 5px;color: #0071bc;" wicket:id="bookrows">
+				<td style="border-bottom: 1px dotted #0071bc; padding: 5px;" wicket:id="bookdataRow"><a href="#" style="color: #006600;">Book's Page</a></td>
+				
+			</tr>
+		</table>
+
+		<br> <br>
+
+		<table align="center"
+		style="border: 10px solid #ec8900; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+			<caption>
+				<img src="MPFM.png" width="800" height="70">
+			</caption>
+			<tr style="border-bottom: 1px dotted #ec8900; padding: 5px;color: #0071bc;">
+				<th>Magazine Name</th>
+				<th>Issue Number</th>
+				<th>Category</th>
+				<th>Publication Year</th>
+				<th>Popularity</th>
+				<th>Link</th>
+			</tr>
+			<tr style="border-bottom: 1px dotted black; padding: 5px;color: #0071bc;" wicket:id="magazinerows">
+				<td style="border-bottom: 1px dotted #0071bc; padding: 5px;" wicket:id="magazinedataRow"><a href="#" style="color: #006600;">Magazine's Page</a></td>
+			</tr>
+		</table>
+
+		<br> <br>
+
+		<table 
+		style="border: 10px solid #ec8900; margin-left:370px; -webkit-border-radius: 13px; -moz-border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; border-radius: 13px;">
+		
+			<caption>
+				<img src="MPFD.png" width="800" height="70">
+			</caption>
+			<tr style="border-bottom: 1px dotted; padding: 5px;color: #0071bc;">
+				<th>DVD Name</th>
+				<th>Duration</th>
+				<th>Category</th>
+				<th>Publication Year</th>
+				<th>Popularity</th>
+				<th>Link</th>
+			</tr>
+			<tr style="border-bottom: 1px dotted #0071bc; padding: 5px;color: #0071bc;" wicket:id="dvdrows">
+				<td style="border-bottom: 1px dotted #0071bc; padding: 5px;" wicket:id="dvddataRow"><a href="#" style="color: #006600;">DVD's Page</a></td>
+			</tr>
+		</table>
+	
+	<br>
+</body>
+</html>
